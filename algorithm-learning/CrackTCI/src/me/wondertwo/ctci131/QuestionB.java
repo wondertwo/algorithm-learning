@@ -1,4 +1,4 @@
-package me.wondertwo.swf131;
+package me.wondertwo.ctci131;
 
 /**
  * 弹性分割，允许栈的大小灵活变化，当一个栈的元素个数超出其容量的时候，就将

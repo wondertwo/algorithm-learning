@@ -1,4 +1,4 @@
-package me.wondertwo.swf131;
+package me.wondertwo.ctci131;
 
 /**
  * 解法一：固定分割，为每个栈分配固定大小的内存空间。

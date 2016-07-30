@@ -1,4 +1,4 @@
-package me.wondertwo.swf140;
+package me.wondertwo.ctci140;
 
 import java.util.Stack;
 
@@ -30,7 +30,7 @@ public class HanoiTower {
     private void moveTop(HanoiTower hanoiTower) {
         int top = disks.pop();
         hanoiTower.initial(top);
-        System.out.println("initial disk " + top + "from " + getIndex() + "to " + hanoiTower.getIndex());
+        System.out.println("initial disk " + top + " from " + getIndex() + " to " + hanoiTower.getIndex());
     }
 
     private void moveDisks(int n, HanoiTower destination, HanoiTower buffer) {

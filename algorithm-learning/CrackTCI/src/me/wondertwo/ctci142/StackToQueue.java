@@ -1,4 +1,4 @@
-package me.wondertwo.swf142;
+package me.wondertwo.ctci142;
 
 import java.util.Stack;
 
