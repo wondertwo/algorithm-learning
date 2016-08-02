@@ -3,7 +3,8 @@ package me.wondertwo;
 import java.util.Arrays;
 
 /**
- * 插入排序
+ * 插入排序：是一种稳定排序。
+ *
  *      空间复杂度：需要一个额外的内存空间作为辅助空间
  *      时间复杂度：O(n^2)
  *
@@ -34,6 +35,7 @@ public class InsertSort {
                 arr[j+1] = arr[0]; //插入到正确的位置
             }
         }
-        arr[0] = 0; //arr[0]恢复为初始值0
+        //循环结束，排序结束。arr[0]为辅助空间，将其值重新恢复为0
+        arr[0] = 0;
     }
 }
