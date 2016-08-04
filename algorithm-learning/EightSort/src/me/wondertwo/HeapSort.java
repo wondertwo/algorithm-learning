@@ -3,7 +3,8 @@ package me.wondertwo;
 import java.util.Arrays;
 
 /**
- * 堆排序：  时间复杂度O(nlogn)，对原始记录的排序状态并不敏感，因此最好、最坏和平均时间复杂度均为O(nlogn)
+ * 堆排序：  迭代法时间复杂度O(nlogn)，对原始记录的排序状态并不敏感，因此最好、最坏和平均时间复杂度均为O(nlogn)
+ *          递归法时间复杂度为O(n^2)
  *          空间复杂度：只需要一个用作交换的暂存单元；
  *          由于记录的比较是跳跃式的，因此堆排序是一种不稳定的排序算法。
  *
@@ -18,7 +19,7 @@ public class HeapSort {
     }
 
     /**
-     * 堆排序
+     * 堆排序，递归实现
      */
     private static void heapSort(int[] arr) {
         int n = arr.length;//数组元素个数
