@@ -1,4 +1,4 @@
-package me.wondertwo;
+package me.wondertwo.heap_sort;
 
 import java.util.Arrays;
 

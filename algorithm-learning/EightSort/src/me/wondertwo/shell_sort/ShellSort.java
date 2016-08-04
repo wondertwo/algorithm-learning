@@ -1,4 +1,4 @@
-package me.wondertwo;
+package me.wondertwo.shell_sort;
 
 import java.util.Arrays;
 

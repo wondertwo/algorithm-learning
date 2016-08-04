@@ -1,4 +1,4 @@
-package me.wondertwo;
+package me.wondertwo.merge_sort;
 
 /**
  * 归并排序：
