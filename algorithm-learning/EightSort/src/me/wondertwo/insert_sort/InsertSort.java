@@ -3,7 +3,7 @@ package me.wondertwo.insert_sort;
 import java.util.Arrays;
 
 /**
- * 插入排序：是一种稳定排序。
+ * 插入排序：是一种稳定排序
  *
  *      空间复杂度：需要一个额外的内存空间作为辅助空间
  *      时间复杂度：O(n^2)

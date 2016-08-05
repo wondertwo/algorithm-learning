@@ -8,12 +8,13 @@ public class HeapSort2 {
     public static void main(String[] args) {
         int[] data5 = new int[] { 5, 3, 6, 2, 1, 9, 4, 8, 7 };
         print(data5);
+        System.out.println("---------------------");
         heapSort(data5);
-        System.out.println("排序后的数组：");
+        System.out.println("---------------------");
         print(data5);
     }
 
-    public static void swap(int[] data, int i, int j) {
+    private static void swap(int[] data, int i, int j) {
         if (i == j) {
             return;
         }
@@ -22,7 +23,7 @@ public class HeapSort2 {
         data[i] = data[i] - data[j];
     }
 
-    public static void heapSort(int[] data) {
+    private static void heapSort(int[] data) {
         for (int i = 0; i < data.length; i++) {
             createMaxdHeap(data, data.length - 1 - i);
             swap(data, 0, data.length - 1 - i);
@@ -30,7 +31,7 @@ public class HeapSort2 {
         }
     }
 
-    public static void createMaxdHeap(int[] data, int lastIndex) {
+    private static void createMaxdHeap(int[] data, int lastIndex) {
         for (int i = (lastIndex - 1) / 2; i >= 0; i--) {
             // 保存当前正在判断的节点
             int k = i;
@@ -56,9 +57,9 @@ public class HeapSort2 {
         }
     }
 
-    public static void print(int[] data) {
-        for (int i = 0; i < data.length; i++) {
-            System.out.print(data[i] + "\t");
+    private static void print(int[] data) {
+        for (int aData : data) {
+            System.out.print(aData + "\t");
         }
         System.out.println();
     }
