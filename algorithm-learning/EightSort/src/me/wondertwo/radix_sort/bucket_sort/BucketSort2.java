@@ -1,4 +1,4 @@
-package me.wondertwo.bucket_sort;
+package me.wondertwo.radix_sort.bucket_sort;
 
 import java.util.ArrayList;
 import java.util.Collections;
