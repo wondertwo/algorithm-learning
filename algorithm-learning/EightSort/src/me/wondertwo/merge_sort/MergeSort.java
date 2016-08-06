@@ -1,7 +1,7 @@
 package me.wondertwo.merge_sort;
 
 /**
- * 归并排序：
+ * 归并排序    稳定    O(n+logn)
  *
  * Created by wondertwo on 2016/8/4.
  */
