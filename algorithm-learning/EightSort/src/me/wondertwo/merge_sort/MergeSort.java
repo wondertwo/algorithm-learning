@@ -6,7 +6,6 @@ package me.wondertwo.merge_sort;
  * Created by wondertwo on 2016/8/4.
  */
 public class MergeSort {
-
     public static void main(String[] args) {
         int[] arr = {99, 0, 41, 17, 100, 71, 54, 3, 101, 44, 92, 63, 59, 40, 27};
         print(arr);
@@ -15,35 +14,23 @@ public class MergeSort {
     }
 
     // 归并排序
-    private static void mergeSort(int[] data) {
-        sort(data, 0, data.length - 1);
-    }
+    private static void mergeSort(int[] data) {sort(data, 0, data.length - 1);}
 
     private static void sort(int[] data, int left, int right) {
-        if (left >= right)
-            return;
-        // 找出中间索引
-        int center = (left + right) / 2;
-        // 对左边数组进行递归
-        sort(data, left, center);
-        // 对右边数组进行递归
-        sort(data, center + 1, right);
-        // 合并
-        merge(data, left, center, right);
-        print(data);
+        if (left >= right) return;
+        int center = (left + right) / 2;  // 找出中间索引
+        sort(data, left, center);         // 对左边数组进行递归
+        sort(data, center + 1, right);    // 对右边数组进行递归
+        merge(data, left, center, right); // 合并
+        // print(data);// 打印排序过程
     }
 
     /**
      * 将两个数组进行归并，归并前面2个数组已有序，归并后依然有序
-     *
-     * @param data
-     *            数组对象
-     * @param left
-     *            左数组的第一个元素的索引
-     * @param center
-     *            左数组的最后一个元素的索引，center+1是右数组第一个元素的索引
-     * @param right
-     *            右数组最后一个元素的索引
+     * @param data   数组对象
+     * @param left   左数组的第一个元素的索引
+     * @param center 左数组的最后一个元素的索引，center+1是右数组第一个元素的索引
+     * @param right  右数组最后一个元素的索引
      */
     private static void merge(int[] data, int left, int center, int right) {
         // 临时数组
@@ -70,16 +57,14 @@ public class MergeSort {
             tmpArr[third++] = data[left++];
         }
         // 将临时数组中的内容拷贝回原数组中
-        // （原left-right范围的内容被复制回原数组）
+        // 原left-right范围的内容被复制回原数组
         while (tmp <= right) {
             data[tmp] = tmpArr[tmp++];
         }
     }
 
     private static void print(int[] data) {
-        for (int aData : data) {
-            System.out.print(aData + "\t");
-        }
+        for (int aData : data) {System.out.print(aData + "\t");}
         System.out.println();
     }
 }

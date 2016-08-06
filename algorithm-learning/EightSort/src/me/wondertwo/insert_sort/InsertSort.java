@@ -3,19 +3,14 @@ package me.wondertwo.insert_sort;
 import java.util.Arrays;
 
 /**
- * 插入排序：是一种稳定排序
- *
- *      空间复杂度：需要一个额外的内存空间作为辅助空间
- *      时间复杂度：O(n^2)
+ * 直接插入排序   稳定  O(n^2)
  *
  * Created by wondertwo on 2016/8/2.
  */
 public class InsertSort {
-
     public static void main(String[] args) {
-        //length=8,其中arr[0]作为辅助空间，
-        //可传入原数组后做处理，在数组最前面添加一个元素0
-        //即arr[0]=0;
+        //length=8,其中arr[0]作为辅助空间，可传入原数组后做处理，
+        //在数组最前面添加一个元素0，即arr[0]=0
         int[] arr = {0, 99, 41, 17, 3, 54, 71, 100};
         insertSort(arr);
         System.out.println(Arrays.toString(arr));

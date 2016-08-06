@@ -6,11 +6,10 @@ package me.wondertwo.quick_sort;
  * Created by wondertwo on 2016/8/5.
  */
 public class QuickSort {
-
     public static void main(String[] args) {
-        int[] arr = {44, 99, 41, 17, 3, 54, 71, 10, 81, 0, 92, 63, 59, 40, 27};
+        int[] arr = {44, 99, 41, 17, 3, 54, 71, 10, 81, 0, 92,
+                63, 59, 40, 27};
         print(arr);
-        System.out.println("--------------------------------");
         quickSort(arr, 0, arr.length-1);
         System.out.println("--------------------------------");
         print(arr);
@@ -24,7 +23,7 @@ public class QuickSort {
     }
 
     private static int partition(int[] arr, int low, int high) {
-        int centerValue = arr[getCenter(arr, low, high)];
+        int centerValue = arr[getCenter(arr, low, high)]; //三数取中
         while (low < high) {
             while (low < high && arr[high]>= centerValue) {
                 high--;
@@ -63,9 +62,7 @@ public class QuickSort {
     }
 
     private static void print(int[] data) {
-        for (int aData : data) {
-            System.out.print(aData + "\t");
-        }
+        for (int aData : data) {System.out.print(aData + "\t");}
         System.out.println();
     }
 }
